@@ -1,0 +1,196 @@
+.nav {
+    width: 100vw;
+    height: 60px;
+    background-color: rgba(#000000, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 2px 50px 5px 30px;
+    color: white;
+    font-size: 50px;
+    position: fixed;
+
+    .logo {
+        color: red;
+    }
+
+    .hamburger {
+        border: 3px white solid;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+
+        .strich {
+            background-color: white;
+            height: 3px;
+            width: 30px;
+            position: relative;
+            top: 24px;
+            left: 10px;
+            &::before {
+                content: '';
+                position: absolute;
+                @extend .strich;
+                left: 0;
+                top: -8px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                @extend .strich;
+                left: 0;
+                top: 8px;
+            }
+        }
+        @media screen and (min-width: 1000px){
+            display: none;
+        }
+    }
+
+    ul {
+        width: 600px;
+        box-sizing: border-box;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 0.5em;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 15px;
+        display: none;
+
+        @media screen and (min-width: 1000px) {
+            display: flex;
+        }
+        li {
+            cursor: pointer;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+.image {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 0;
+    z-index: -1;
+}
+
+.headertxt {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    color: red;
+    font-size: 80px;
+
+            .txt1 {   
+                animation-name: displaytxt;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                
+                @keyframes displaytxt {
+                    0% {
+                        color: transparent;
+                    }
+                    50% {
+                        color: transparent;
+                    }
+                    100% {
+                        color: red;
+                    }
+                }
+            }
+    
+            .red {
+                position: absolute;
+                background-color: red;
+                width: 0%;
+                height: 33%;
+                top: 0;
+                z-index: 10;
+                animation-name: balken;
+                animation-duration: 2s;        
+
+
+                @keyframes balken {
+                    0% {
+                        width: 0%;
+                    }
+                    50% {
+                        width: 40%;
+                        left: 0%;
+                    }
+                    100% {
+                        width: 0%;
+                        left: 40%;
+                    }
+                } 
+            }     
+
+
+            .txt2 {
+                @extend .txt1;
+                color: transparent;
+                animation-delay: 2s;
+            }
+            .red2 {
+                position: absolute;
+                height: 33%;
+                width: 0%;
+                background-color: red;
+                z-index: 10;
+                top: 33%;
+                animation-name: balken2;
+                animation-duration: 2s;
+                animation-delay: 2s;
+
+                @keyframes balken2 {
+                    0% {
+                        width: 0%;
+                    }
+                    50% {
+                        width: 100%;
+                        left: 0%;
+                    }
+                    100% {
+                        width: 0%;
+                        left: 100%;
+                    }
+                }
+            }
+
+            .txt3 {
+                @extend .txt1;
+                color: transparent;
+                animation-delay: 4s;
+            }
+
+            .red3 {
+                position: absolute;
+                height: 33%;
+                width: 0%;
+                background-color: red;
+                z-index: 10;
+                top: 66%;
+                animation-name: balken3;
+                animation-duration: 2s;
+                animation-delay: 4s;
+
+                @keyframes balken3 {
+                    0% {
+                        width: 0%;
+                    }
+                    50% {
+                        width: 70%;
+                        left: 0%;
+                    }
+                    100% {
+                        width: 0%;
+                        left: 70%;
+                    }
+                }
+            }
+}
