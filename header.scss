@@ -12,7 +12,7 @@
     position: fixed;
 
     .logo {
-        color: red;
+        color: white;
     }
 
     .hamburger {
@@ -20,6 +20,7 @@
         height: 50px;
         width: 50px;
         border-radius: 50%;
+        cursor: pointer;
 
         .strich {
             background-color: white;
@@ -63,9 +64,13 @@
             display: flex;
         }
         li {
-            cursor: pointer;
-            &:hover {
-                color: red;
+            a {
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+                &:hover {
+                    color: red;
+            }
             }
         }
     }
@@ -76,14 +81,24 @@
     width: 100vw;
     position: relative;
     top: 0;
+    z-index: -5;
+}
+
+.blackheaderimage {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.4;
     z-index: -1;
 }
 
 .headertxt {
     position: absolute;
     top: 200px;
-    left: 50px;
-    color: red;
+    left: 100px;
+    color: white;
     font-size: 80px;
 
             .txt1 {   
@@ -99,7 +114,7 @@
                         color: transparent;
                     }
                     100% {
-                        color: red;
+                        color: white;
                     }
                 }
             }

@@ -1,1 +1,76 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+#main h2 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 80px;
+}
+
+#main .htmlcssjs {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#main .htmlcssjs div i {
+  font-size: 300px;
+}
+
+#main .htmlcssjs div p {
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+
+#main .htmlcssjs .fa-html5 {
+  color: orange;
+}
+
+#main .htmlcssjs .fa-css3-alt {
+  color: blue;
+  margin-right: 20px;
+}
+
+#main .htmlcssjs .fa-sass {
+  color: violet;
+  margin-left: 20px;
+}
+
+#main .htmlcssjs .fa-js {
+  color: yellow;
+}
+
+#main .htmlcssjs .jquery img {
+  margin-top: -150px;
+  margin-bottom: -100px;
+}
+
+#main .htmlcssjs .fa-git {
+  color: brown;
+}
+
+#main #project {
+  background-color: whitesmoke;
+}
+
+#main #project p {
+  text-align: center;
+  font-size: 30px;
+  color: grey;
+}
+
+#main #project .einkaufsliste .txt {
+  text-decoration: line-through;
+}
+
+#main #project .einkaufsliste .fa-trash-alt {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: red;
+  z-index: 100;
+}
+
+#main #project .einkaufsliste .btn-danger {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=main.css.map */

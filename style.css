@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .nav {
@@ -25,7 +26,7 @@
 }
 
 .nav .logo {
-  color: red;
+  color: white;
 }
 
 .nav .hamburger {
@@ -33,6 +34,7 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .nav .hamburger .strich, .nav .hamburger .strich::before, .nav .hamburger .strich::after {
@@ -90,11 +92,13 @@
   }
 }
 
-.nav ul li {
+.nav ul li a {
+  text-decoration: none;
+  color: white;
   cursor: pointer;
 }
 
-.nav ul li:hover {
+.nav ul li a:hover {
   color: red;
 }
 
@@ -103,14 +107,24 @@
   width: 100vw;
   position: relative;
   top: 0;
+  z-index: -5;
+}
+
+.blackheaderimage {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.4;
   z-index: -1;
 }
 
 .headertxt {
   position: absolute;
   top: 200px;
-  left: 50px;
-  color: red;
+  left: 100px;
+  color: white;
   font-size: 80px;
 }
 
@@ -131,7 +145,7 @@
     color: transparent;
   }
   100% {
-    color: red;
+    color: white;
   }
 }
 
@@ -143,7 +157,7 @@
     color: transparent;
   }
   100% {
-    color: red;
+    color: white;
   }
 }
 
@@ -284,5 +298,81 @@
     width: 0%;
     left: 70%;
   }
+}
+
+#main h2 {
+  text-align: center;
+  padding-top: 80px;
+  font-size: 80px;
+}
+
+#main .htmlcssjs {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#main .htmlcssjs div i {
+  font-size: 300px;
+}
+
+#main .htmlcssjs div p {
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+
+#main .htmlcssjs .fa-html5 {
+  color: orange;
+}
+
+#main .htmlcssjs .fa-css3-alt {
+  color: blue;
+  margin-right: 20px;
+}
+
+#main .htmlcssjs .fa-sass {
+  color: violet;
+  margin-left: 20px;
+}
+
+#main .htmlcssjs .fa-js {
+  color: yellow;
+}
+
+#main .htmlcssjs .jquery img {
+  margin-top: -150px;
+  margin-bottom: -100px;
+}
+
+#main .htmlcssjs .fa-git {
+  color: brown;
+}
+
+#main #project {
+  background-color: whitesmoke;
+}
+
+#main #project p {
+  text-align: center;
+  font-size: 30px;
+  color: grey;
+}
+
+#main #project .einkaufsliste .txt {
+  text-decoration: line-through;
+}
+
+#main #project .einkaufsliste .fa-trash-alt {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: red;
+  z-index: 100;
+}
+
+#main #project .einkaufsliste .btn-danger {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */

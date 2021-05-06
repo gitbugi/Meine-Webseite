@@ -1,0 +1,79 @@
+#main {
+    h2 {
+        text-align: center;
+        padding-top: 80px;
+        font-size: 80px;
+    }
+    
+    .htmlcssjs {
+        text-align: center;
+        padding-top: 50px;
+
+        div {
+            i {
+              font-size: 300px;
+            }
+            p {
+                padding-bottom: 30px;
+                font-size: 50px;
+            }
+        }
+        .fa-html5 {
+            color: orange;
+        }
+
+        .fa-css3-alt {
+            color: blue;
+            margin-right: 20px;
+        }
+
+        .fa-sass {
+            color: violet;
+            margin-left: 20px;
+        }
+
+        .fa-js {
+            color: yellow;
+        }
+        
+        .jquery {
+            img {
+                margin-top: -150px;
+                margin-bottom: -100px;
+            }
+        }
+
+        .fa-git {
+            color: brown;
+        }
+    }
+
+    #project {
+        background-color: rgb(245, 245, 245);
+        p {
+            text-align: center;
+            font-size: 30px;
+            color: grey;
+        }
+
+        .einkaufsliste {
+             .txt {
+                text-decoration: line-through;
+              }
+          
+              .fa-trash-alt {
+                position: absolute;
+                right: 10px;
+                cursor: pointer;
+                color: red;
+                z-index: 100;
+              }
+          
+              .btn-danger {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%)
+              }
+        }
+    }
+}

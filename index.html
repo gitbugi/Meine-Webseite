@@ -6,37 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Webseite</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section id="header">
         <div class="nav">
-            <div class="logo"><span style="color: black">B</span>UGI</div>
+            <div class="logo"><span style="color: red">B</span>UGI</div>
             <div class="hamburger">
                 <div class="strich"></div>
             </div>
             <ul>
-                <li>home</li>
-                <li>skills</li>
-                <li>about</li>
-                <li>contact</li>
+                <li><a href="#header">home</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
 
         <img src="/img/laptop-1839876_1920.jpg" alt="img" class="image">
+        <div class="blackheaderimage"></div>
         <div class="headertxt">
             
             <p class="txt1">Hallo</p>
             <div class="red"></div>    
             <p class="txt2">Mein Name ist</p>
             <div class="red2"></div>    
-            <p class="txt3"><span style="color: black">B</span>ugrahan</p>
+            <p class="txt3"><span style="color: red">B</span>ugrahan</p>
             <div class="red3"></div>
         </div>
     </section>
 
-    <div class="x" style="height: 400vh"></div>
+    <section id="main">
+        <section id="skills">
+            <h2>SKILLS</h2>
+
+            <div class="htmlcssjs">
+                <div class="html">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="css">
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-sass"></i>
+                    <p>(S)CSS</p>
+                </div>
+                <div class="js">
+                    <i class="fab fa-js"></i>
+                    <p>JAVASCRIPT</p>
+                </div>
+                <div class="jquery">
+                    <img src="./img/iconfinder_JQuery_logo_282806.png" alt="jquery">
+                    <p>JQUERY</p>
+                </div>
+                <div class="linux">
+                    <i class="fab fa-linux"></i>
+                    <p>LINUX</p>
+                </div>
+                <div class="git">
+                    <i class="fab fa-git"></i>
+                    <p>GIT</p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section id="project">
+            <h2>Project Einkaufsliste</h2>
+            <p>Beispielprojekt mit JQuery</p>
+
+            <div class="einkaufsliste ">
+                <div class="container mt-5">
+                    <h1 class="text-center mb-2">Einkaufsliste</h1>
+            
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Item" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enter</button>
+                    </div>
+            
+                </div>
+                
+                <button type="button" class="btn btn-danger">Remove All</button>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </section>
+    </section>
 
 </body>
 
