@@ -1,5 +1,33 @@
+//Vanilla JS, Webseite
+var scrolltoheader = document.querySelector(".scrolltoheader");
+
+window.addEventListener('scroll', function(){
+    let nav = document.querySelector(".nav");
+
+    if (window.scrollY > 150) {
+        nav.style.backgroundColor = "rgb(6, 6, 104)";
+    }
+    else {
+        nav.style.backgroundColor = "transparent";
+    }
 
 
+    if (window.scrollY > 500) {
+        scrolltoheader.style.display = "block";
+    }
+    else {
+        scrolltoheader.style.display = "none";
+    }
+})
+
+scrolltoheader.addEventListener('click', function(){
+    window.scrollTo(0, 0)
+})
+
+
+
+
+//JQuery, Einkaufsliste
 $("#button-addon2").click(function(){
     var inputTxt = $(".form-control").val();
 
