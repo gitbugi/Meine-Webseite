@@ -14,10 +14,11 @@
           justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 2px 50px 5px 30px;
+  padding: 5px 30px 5px 30px;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   position: fixed;
+  z-index: 100;
 }
 
 .nav .logo {
@@ -37,8 +38,8 @@
   height: 3px;
   width: 30px;
   position: relative;
-  top: 24px;
-  left: 10px;
+  top: 22px;
+  left: 7px;
 }
 
 .nav .hamburger .strich::before {
@@ -118,9 +119,15 @@
 .headertxt {
   position: absolute;
   top: 200px;
-  left: 100px;
+  left: 50px;
   color: white;
-  font-size: 80px;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 1000px) {
+  .headertxt {
+    font-size: 60px;
+  }
 }
 
 .headertxt .txt1, .headertxt .txt2, .headertxt .txt3 {

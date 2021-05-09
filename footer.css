@@ -1,1 +1,41 @@
-/* No CSS *//*# sourceMappingURL=footer.css.map */
+#footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  height: 200px;
+  background-color: blue;
+}
+
+#footer .footer-txt {
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+}
+
+#footer .footer-txt h4 {
+  text-transform: uppercase;
+}
+
+#footer .footer-txt .footer-symbols i {
+  font-size: 30px;
+  margin: 15px 10px 35px 10px;
+  cursor: pointer;
+  color: white;
+}
+
+#footer .footer-txt .footer-symbols a .fa-xing-square:hover {
+  color: green;
+}
+
+#footer .footer-txt .footer-symbols a .fa-linkedin:hover {
+  color: blue;
+}
+
+#footer .footer-txt .footer-symbols a .fa-github:hover {
+  color: black;
+}
+
+#footer .footer-txt p {
+  font-size: 10px;
+}
+/*# sourceMappingURL=footer.css.map */

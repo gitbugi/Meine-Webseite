@@ -7,11 +7,21 @@
     
     .htmlcssjs {
         text-align: center;
+        box-sizing: border-box;
         padding-top: 50px;
+
+        @media screen and (min-width: 1000px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         div {
             i {
-              font-size: 300px;
+              font-size: 200px;
+
+              @media screen and (min-width: 1400) {
+                font-size: 100px;
+            }
             }
             p {
                 padding-bottom: 30px;
@@ -29,7 +39,7 @@
 
         .fa-sass {
             color: violet;
-            margin-left: 20px;
+            margin-left: 20px; 
         }
 
         .fa-js {
@@ -38,8 +48,10 @@
         
         .jquery {
             img {
-                margin-top: -150px;
+                width: 300px;
+                height: 400px;
                 margin-bottom: -100px;
+                margin-top: -100px;
             }
         }
 
@@ -50,6 +62,10 @@
 
     #project {
         background-color: rgb(245, 245, 245);
+        padding-bottom: 50px;
+        h2 {
+            font-size: 60px;
+        }
         p {
             text-align: center;
             font-size: 30px;
@@ -57,6 +73,7 @@
         }
 
         .einkaufsliste {
+
              .txt {
                 text-decoration: line-through;
               }
@@ -76,4 +93,104 @@
               }
         }
     }
+
+
+    #aboutMe {
+        padding-bottom: 50px;
+        img {
+            width: 60%;
+            max-width: 400px;
+            border: 4px red solid;
+
+            @media screen and (min-width: 1000px) {
+                width: 300px;
+                margin-right: 20px;
+            }
+        }
+        text-align: center;
+
+        h3 {
+            padding-top: 80px;
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        h5 {
+            margin-top: 50px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .aboutMe-long {
+            
+            @media screen and (min-width: 1000px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .aboutMe-txt {
+                @media screen and (min-width: 1000px) {
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+
+    #contact {
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .infocard {
+            height: 150px;
+            width: 250px;
+            border: 0.5px solid grey;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow:  0px 0px 8px grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                box-shadow: none;
+            }
+
+            i {
+                font-size: 60px;
+                margin-right: 15px;
+                margin-top: -10px;
+                color: grey;
+            }
+
+            .contact-txt {
+                h4 {
+                    font-weight: 600;
+                }
+            }
+
+            @media screen and (min-width: 1000px) { 
+                margin: 20px 10px;
+                width: 300px;
+            }
+        }
+
+        .infocards {
+            @media screen and (min-width: 1000px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    }
+
 }

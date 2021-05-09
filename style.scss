@@ -1,7 +1,10 @@
 * {
 margin: 0;
 scroll-behavior: smooth;
+box-sizing: border-box;
 }
+
+$headerfootercolor: rgb(6, 6, 104);
 
 @import './header.scss';
 @import './main.scss';

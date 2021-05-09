@@ -1,0 +1,44 @@
+
+    #footer {
+        box-sizing: border-box;
+        width: 100vw;
+        height: 200px;
+        background-color: $headerfootercolor;
+
+        .footer-txt {
+            text-align: center;
+            color: white;
+            padding-top: 40px;
+
+            h4 {
+                text-transform: uppercase;
+            }
+
+            .footer-symbols {
+                i {
+                    font-size: 30px;
+                    margin: 15px 10px 35px 10px;
+                    cursor: pointer;
+                    color: white;
+                }
+
+                a {
+                    .fa-xing-square:hover {
+                        color: green;
+                    }
+
+                    .fa-linkedin:hover {
+                        color: blue;
+                    }
+
+                    .fa-github:hover {
+                        color: black;
+                    }
+                }
+            }
+
+            p {
+                font-size: 10px;
+            }
+        }
+    }

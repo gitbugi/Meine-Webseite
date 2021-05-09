@@ -6,11 +6,28 @@
 
 #main .htmlcssjs {
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 50px;
 }
 
+@media screen and (min-width: 1000px) {
+  #main .htmlcssjs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 #main .htmlcssjs div i {
-  font-size: 300px;
+  font-size: 200px;
+}
+
+@media screen and (min-width: 1400) {
+  #main .htmlcssjs div i {
+    font-size: 100px;
+  }
 }
 
 #main .htmlcssjs div p {
@@ -37,8 +54,10 @@
 }
 
 #main .htmlcssjs .jquery img {
-  margin-top: -150px;
+  width: 300px;
+  height: 400px;
   margin-bottom: -100px;
+  margin-top: -100px;
 }
 
 #main .htmlcssjs .fa-git {
@@ -47,6 +66,11 @@
 
 #main #project {
   background-color: whitesmoke;
+  padding-bottom: 50px;
+}
+
+#main #project h2 {
+  font-size: 60px;
 }
 
 #main #project p {
@@ -72,5 +96,134 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+#main #aboutMe {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#main #aboutMe img {
+  width: 60%;
+  max-width: 400px;
+  border: 4px red solid;
+}
+
+@media screen and (min-width: 1000px) {
+  #main #aboutMe img {
+    width: 300px;
+    margin-right: 20px;
+  }
+}
+
+#main #aboutMe h3 {
+  padding-top: 80px;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#main #aboutMe h5 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1000px) {
+  #main #aboutMe .aboutMe-long {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #main #aboutMe .aboutMe-long .aboutMe-txt {
+    max-width: 400px;
+  }
+}
+
+#main #contact {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+#main #contact h2 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+#main #contact .infocard {
+  height: 150px;
+  width: 250px;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 8px grey;
+          box-shadow: 0px 0px 8px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #contact .infocard:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#main #contact .infocard i {
+  font-size: 60px;
+  margin-right: 15px;
+  margin-top: -10px;
+  color: grey;
+}
+
+#main #contact .infocard .contact-txt h4 {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1000px) {
+  #main #contact .infocard {
+    margin: 20px 10px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #main #contact .infocards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
