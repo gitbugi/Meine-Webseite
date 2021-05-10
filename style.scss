@@ -1,12 +1,19 @@
+$headerfootercolor: rgb(6, 6, 104);
+
+
 * {
 margin: 0;
 scroll-behavior: smooth;
 box-sizing: border-box;
 }
 
-$headerfootercolor: rgb(6, 6, 104);
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
 
 .scrolltoheader {
+    display: none;
     position: fixed;
     right: 50px;
     bottom: 50px;

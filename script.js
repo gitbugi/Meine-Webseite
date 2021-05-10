@@ -1,4 +1,4 @@
-//Vanilla JS, Webseite
+//Vanilla JS, Scroll
 var scrolltoheader = document.querySelector(".scrolltoheader");
 
 window.addEventListener('scroll', function(){
@@ -24,8 +24,29 @@ scrolltoheader.addEventListener('click', function(){
     window.scrollTo(0, 0)
 })
 
+//Vanilla JS, hamburger 
+var hamburger = document.querySelector(".hamburger");
+var sidebar = document.querySelector(".sidebar");
+var sidebarmenu = document.querySelectorAll(".sidebar ul li a");
 
+var strich1 = document.querySelector(".strich1");
+var strich2 = document.querySelector(".strich2");
 
+hamburger.addEventListener('click', function(){
+    sidebar.classList.toggle("sidebar-move");
+
+    strich1.classList.toggle("strich-move");
+    strich2.classList.toggle("strich-move");
+})
+
+sidebarmenu.forEach(function(x) {
+    x.addEventListener('click', function(){
+        sidebar.classList.toggle("sidebar-move");
+
+        strich1.classList.toggle("strich-move");
+        strich2.classList.toggle("strich-move");
+    })
+})
 
 //JQuery, Einkaufsliste
 $("#button-addon2").click(function(){
