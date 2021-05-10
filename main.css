@@ -1,7 +1,8 @@
 #main h2 {
   text-align: center;
-  padding-top: 80px;
-  font-size: 80px;
+  padding-top: 50px;
+  font-size: 60px;
+  font-family: 'Itim', cursive;
 }
 
 #main .htmlcssjs {
@@ -69,10 +70,6 @@
   padding-bottom: 50px;
 }
 
-#main #project h2 {
-  font-size: 60px;
-}
-
 #main #project p {
   text-align: center;
   font-size: 30px;
@@ -116,16 +113,16 @@
   }
 }
 
-#main #aboutMe h3 {
-  padding-top: 80px;
-  font-size: 40px;
-  font-weight: 900;
-}
-
 #main #aboutMe h5 {
   margin-top: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  font-size: 25px;
   font-weight: 600;
+  font-family: 'Itim', cursive;
+}
+
+#main #aboutMe .aboutMe-long {
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -146,6 +143,7 @@
 @media screen and (min-width: 1000px) {
   #main #aboutMe .aboutMe-long .aboutMe-txt {
     max-width: 400px;
+    text-align: left;
   }
 }
 
@@ -162,12 +160,6 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 50px;
-}
-
-#main #contact h2 {
-  font-size: 40px;
-  font-weight: 900;
-  margin-bottom: 20px;
 }
 
 #main #contact .infocard {

@@ -7,9 +7,11 @@ scroll-behavior: smooth;
 box-sizing: border-box;
 }
 
-html {
-    width: 100vw;
+
+.wrapper {
+    position: relative;
     overflow-x: hidden;
+    //Damit overflow-x bei mobile ansicht funktioniert 
 }
 
 .scrolltoheader {
